@@ -20,7 +20,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.jiovan.maven</groupId>
+    <groupId>com.jiovan.maven.plugin</groupId>
     <artifactId>docent-maven-plugin</artifactId>
     <version>4.0.0</version>
     <packaging>maven-plugin</packaging>

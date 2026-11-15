@@ -33,7 +33,7 @@
                         </taglet>
                     </taglets>
                     <tagletArtifact>
-                        <groupId>com.jiovan.maven</groupId>
+                        <groupId>com.jiovan.maven.plugin</groupId>
                         <artifactId>docent-maven-plugin</artifactId>
                         <version>LATEST</version>
                     </tagletArtifact>

@@ -1,4 +1,4 @@
-# Javadoc Docent Maven Plugin
+# Docent Maven Plugin
 
 docent-maven-plugin is a maven plugin, to support generating alternative Javadoc annotations, with multilingual capability.
 
@@ -37,7 +37,7 @@ docent-maven-plugin is a maven plugin, to support generating alternative Javadoc
                         </taglet>
                     </taglets>
                     <tagletArtifact>
-                        <groupId>com.jiovan.plugincom.jiovan.plugin</groupId>
+                        <groupId>com.jiovan.maven.plugin</groupId>
                         <artifactId>docent-maven-plugin</artifactId>
                         <version>LATEST</version>
                     </tagletArtifact>
@@ -74,6 +74,10 @@ docent-maven-plugin is a maven plugin, to support generating alternative Javadoc
 This project is under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 See the `NOTICE.txt` file for required notices and attributions.
+
+## Copyright
+
+Beijing Jiovan Technology Ltd.
 
 ## Donation
 
