@@ -78,7 +78,8 @@ public class ReferenceTaglet extends AbstractBlockTaglet {
             if (!(tag instanceof UnknownBlockTagTree tree)) {
                 continue;
             }
-            String[] args = StringUtils.split(tree.getContent().toString(), StringUtils.SPACE);
+            // keep a quoted argument (spaces allowed inside) as a whole, e.g. "https://jiovan.com" "jiovan.com"
+            String[] args = JavadocContentUtils.argsToArray(tree.getContent().toString());
             String href = JavadocContentUtils.unquote(ArrayUtils.get(args, 0));
             String content = JavadocContentUtils.unquote(ArrayUtils.get(args, 1));
             String tr = JavadocContentUtils.trTdAOpeningBlank(href, content);

@@ -24,32 +24,32 @@ import jakarta.annotation.Nonnull;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import com.sun.source.doctree.DocTree;
-import com.sun.source.doctree.UnknownInlineTagTree;
+import com.sun.source.doctree.UnknownBlockTagTree;
 import com.jiovan.maven.plugin.docent.util.JavadocContentUtils;
 
 
 /**
- * An inline taglet that representing {@code `@dtdd`} tag
+ * A block taglet that representing {@code `@dtdd`} tag
  *
  * <pre><code>
- *     {&#64;dtdd "Example Dtdd" "Dtdd Content"}
+ *     &#64;dtdd "Dtdd Title" "Dtdd Content"
  * </code></pre>
  * represents
  * <pre><code>
  *     &lt;dt&gt;
- *         title
+ *         Dtdd Title
  *     &lt;/dt&gt;
  *     &lt;dd&gt;
- *         content
+ *         Dtdd Content
  *     &lt;/dd&gt;
  * </code></pre>
  *
  * @author David Hsing
  *
- * {@dtdd "Example Dtdd" "Dtdd Content"}
+ * @dtdd "Dtdd Title" "Dtdd Content"
  */
 @SuppressWarnings({"unused", "BooleanMethodIsAlwaysInverted", "UnusedReturnValue", "JavadocDeclaration"})
-public class DtddTaglet extends AbstractInlineTaglet {
+public class DtddTaglet extends AbstractBlockTaglet {
     private static final String TAG_NAME = "dtdd";    // $NON-NLS-1$
 
     /**
@@ -71,10 +71,11 @@ public class DtddTaglet extends AbstractInlineTaglet {
         }
         List<String> result = new ArrayList<>();
         for (DocTree tag : tags) {
-            if (!(tag instanceof UnknownInlineTagTree tree)) {
+            if (!(tag instanceof UnknownBlockTagTree tree)) {
                 continue;
             }
-            String[] args = StringUtils.split(tree.getContent().toString(), StringUtils.SPACE);
+            // keep a quoted argument (spaces allowed inside) as a whole, e.g. "Example Dtdd" "Dtdd Content"
+            String[] args = JavadocContentUtils.argsToArray(tree.getContent().toString());
             String title = JavadocContentUtils.unquote(ArrayUtils.get(args, 0));
             String content = JavadocContentUtils.unquote(ArrayUtils.get(args, 1));
             String dtDd = JavadocContentUtils.dtDd(title, content);

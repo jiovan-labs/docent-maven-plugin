@@ -26,7 +26,7 @@
     <packaging>maven-plugin</packaging>
 
     <name>${project.artifactId}</name>
-    <description>Javadoc Docent for Maven Plugin</description>
+    <description>Docent for Maven Plugin</description>
     <url>https://github.com/jiovan-labs/docent-maven-plugin</url>
     <inceptionYear>2023</inceptionYear>
 

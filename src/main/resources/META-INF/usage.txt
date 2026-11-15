@@ -1,5 +1,5 @@
 
-# Javadoc9 Docent for Maven Plugin
+# Docent for Maven Plugin
 # Usage "mvn com.jiovan.plugin:javadoc9-docent-maven-plugin:help"
 # See "https://maven.apache.org/plugins/maven-javadoc-plugin/examples/alternate-doclet.html"
 # See "https://maven.apache.org/plugins/maven-javadoc-plugin/examples/taglet-configuration.html"
@@ -14,27 +14,27 @@
                 <configuration>
                     <taglets>
                         <taglet>
-                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.AttentionTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.AttentionTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.DtddTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.DtddTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.ReferenceTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.ReferenceTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.TaskTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.TaskTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.UrlTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.UrlTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.WarningTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.WarningTaglet</tagletClass>
                         </taglet>
                     </taglets>
                     <tagletArtifact>
-                        <groupId>com.jiovan.plugin</groupId>
-                        <artifactId>javadoc9-docent-maven-plugin</artifactId>
+                        <groupId>com.jiovan.maven</groupId>
+                        <artifactId>docent-maven-plugin</artifactId>
                         <version>LATEST</version>
                     </tagletArtifact>
                 </configuration>

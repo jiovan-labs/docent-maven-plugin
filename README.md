@@ -55,7 +55,7 @@ docent-maven-plugin is a maven plugin, to support generating alternative Javadoc
 | Annotation | Taglet Type | Usage                         |
 |------------|-------------|-------------------------------|
 | @attention | block       | @attention "content"          |
-| @dtdd      | inline      | {@dtdd "title" "content"}     |
+| @dtdd      | block       | @dtdd "title" "content"       |
 | @reference | block       | @reference "href" ["content"] |
 | @task      | block       | @task "content"               |
 | @url       | inline      | {&#64;url "href" ["content"]} |
