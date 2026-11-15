@@ -1,6 +1,6 @@
 
 # Javadoc9 Docent for Maven Plugin
-# Usage "mvn cn.unikue.mavenplugin:javadoc9-docent-maven-plugin:help"
+# Usage "mvn com.jiovan.plugin:javadoc9-docent-maven-plugin:help"
 # See "https://maven.apache.org/plugins/maven-javadoc-plugin/examples/alternate-doclet.html"
 # See "https://maven.apache.org/plugins/maven-javadoc-plugin/examples/taglet-configuration.html"
 # ==============================================================================================
@@ -14,26 +14,26 @@
                 <configuration>
                     <taglets>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.AttentionTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.AttentionTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.DtddTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.DtddTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.ReferenceTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.ReferenceTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.TaskTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.TaskTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.UrlTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.UrlTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.WarningTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.plugin.WarningTaglet</tagletClass>
                         </taglet>
                     </taglets>
                     <tagletArtifact>
-                        <groupId>cn.unikue.mavenplugin</groupId>
+                        <groupId>com.jiovan.plugin</groupId>
                         <artifactId>javadoc9-docent-maven-plugin</artifactId>
                         <version>LATEST</version>
                     </tagletArtifact>

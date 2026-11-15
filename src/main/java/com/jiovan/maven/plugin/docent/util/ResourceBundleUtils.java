@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 Unikue Ltd. All rights reserved.
+ * Copyright (c) 2026 Jiovan Ltd. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package cn.unikue.mavenplugin.javadocdocent.util;
+package com.jiovan.maven.plugin.docent.util;
 
 
 import java.util.List;
@@ -23,7 +23,7 @@ import java.util.ResourceBundle;
 import jakarta.annotation.Nullable;
 import org.apache.commons.lang3.LocaleUtils;
 import org.apache.commons.lang3.StringUtils;
-import cn.unikue.mavenplugin.javadocdocent.constant.ResourceBundleConst;
+import com.jiovan.maven.plugin.docent.constant.ResourceBundleConst;
 
 
 /**

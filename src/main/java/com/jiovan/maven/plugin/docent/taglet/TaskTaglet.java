@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 Unikue Ltd. All rights reserved.
+ * Copyright (c) 2026 Jiovan Ltd. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package cn.unikue.mavenplugin.javadocdocent.taglet;
+package com.jiovan.maven.plugin.docent.taglet;
 
 
 import java.util.ArrayList;
@@ -24,8 +24,8 @@ import jakarta.annotation.Nonnull;
 import org.apache.commons.lang3.StringUtils;
 import com.sun.source.doctree.DocTree;
 import com.sun.source.doctree.UnknownBlockTagTree;
-import cn.unikue.mavenplugin.javadocdocent.util.JavadocContentUtils;
-import cn.unikue.mavenplugin.javadocdocent.util.ResourceBundleUtils;
+import com.jiovan.maven.plugin.docent.util.JavadocContentUtils;
+import com.jiovan.maven.plugin.docent.util.ResourceBundleUtils;
 
 
 /**

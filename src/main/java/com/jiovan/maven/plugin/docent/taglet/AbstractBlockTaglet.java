@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 Unikue Ltd. All rights reserved.
+ * Copyright (c) 2026 Jiovan Ltd. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-package cn.unikue.mavenplugin.javadocdocent.taglet;
+package com.jiovan.maven.plugin.docent.taglet;
 
 
 /**
- * An abstract taglet that representing inline tags
+ * An abstract taglet that representing block tags
  *
  * @author David Hsing
  */
 @SuppressWarnings("unused")
-public abstract class AbstractInlineTaglet extends AbstractBaseTaglet {
+public abstract class AbstractBlockTaglet extends AbstractBaseTaglet {
     /**
      * {@inheritDoc}
      */
     @Override
     public boolean isInlineTag() {
-        return true;
+        return false;
     }
 }

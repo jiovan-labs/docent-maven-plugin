@@ -1,6 +1,6 @@
 # Javadoc Docent Maven Plugin
 
-javadoc-docent-maven-plugin is a maven plugin, to support generating alternative javadoc annotations, with multilingual capability.
+docent-maven-plugin is a maven plugin, to support generating alternative Javadoc annotations, with multilingual capability.
 
 ## Quickstart
 
@@ -18,27 +18,27 @@ javadoc-docent-maven-plugin is a maven plugin, to support generating alternative
                 <configuration>
                     <taglets>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.AttentionTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.AttentionTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.DtddTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.DtddTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.ReferenceTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.ReferenceTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.TaskTagletcn.unikue.mavenplugin.javadocdocent.taglet.TaskTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.TaskTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.UrlTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.UrlTaglet</tagletClass>
                         </taglet>
                         <taglet>
-                            <tagletClass>cn.unikue.mavenplugin.javadocdocent.taglet.WarningTaglet</tagletClass>
+                            <tagletClass>com.jiovan.maven.plugin.docent.taglet.WarningTaglet</tagletClass>
                         </taglet>
                     </taglets>
                     <tagletArtifact>
-                        <groupId>cn.unikue.mavenplugin</groupId>
-                        <artifactId>javadoc-docent-maven-plugin</artifactId>
+                        <groupId>com.jiovan.plugincom.jiovan.plugin</groupId>
+                        <artifactId>docent-maven-plugin</artifactId>
                         <version>LATEST</version>
                     </tagletArtifact>
                 </configuration>
@@ -50,7 +50,7 @@ javadoc-docent-maven-plugin is a maven plugin, to support generating alternative
 
 > You may just include the necessary `taglet` as you wish.
 
-- Supported javadoc annotations are:
+- Supported Javadoc annotations are:
 
 | Annotation | Taglet Type | Usage                         |
 |------------|-------------|-------------------------------|
@@ -63,7 +63,7 @@ javadoc-docent-maven-plugin is a maven plugin, to support generating alternative
 
 ## Document
 
-- Github: https://github.com/unikueltd/javadoc-docent-maven-plugin
+- Github: https://github.com/jiovan-labs/docent-maven-plugin
 
 ## Requirement
 
@@ -77,8 +77,8 @@ See the `NOTICE.txt` file for required notices and attributions.
 
 ## Donation
 
-You like this package? Then [donate to Unikue](https://unikue.cn/donation) to support the development.
+You like this package? Then [donate to Jiovan](https://jiovan.com/donation) to support the development.
 
 ## Website
 
-- Unikue: https://unikue.cn
+- Jiovan: https://jiovan.com
