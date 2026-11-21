@@ -31,6 +31,7 @@ import lombok.Getter;
  * An abstract taglet that representing tags
  *
  * @author David Hsing
+ *
  * @reference "https://openjdk.java.net/groups/compiler/using-new-doclet.html"
  * @reference "https://github.com/jamesdbaker/javadoc9/"
  * @reference "https://riptutorial.com/maven/example/30104/reading-a-pom-xml-at-runtime-using-maven-model-plugin"

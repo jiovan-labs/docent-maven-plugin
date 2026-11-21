@@ -30,6 +30,7 @@ import com.jiovan.maven.plugin.docent.constant.ResourceBundleConst;
  * Utilities for {@link java.util.ResourceBundle}
  *
  * @author David Hsing
+ *
  * @see java.util.ResourceBundle
  */
 @SuppressWarnings({"unused", "BooleanMethodIsAlwaysInverted", "UnusedReturnValue"})

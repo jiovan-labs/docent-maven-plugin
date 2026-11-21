@@ -21,6 +21,7 @@ package com.jiovan.maven.plugin.docent.constant;
  * Constants for {@link java.util.ResourceBundle}
  *
  * @author David Hsing
+ *
  * @see java.util.ResourceBundle
  */
 @SuppressWarnings("unused")

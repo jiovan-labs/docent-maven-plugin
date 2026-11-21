@@ -1,3 +1,5 @@
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md)
+
 # Docent Maven Plugin
 
 docent-maven-plugin is a maven plugin, to support generating alternative Javadoc annotations, with multilingual capability.
